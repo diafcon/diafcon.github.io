@@ -1,0 +1,18 @@
+{{/* Included at the top of the body on all but the index page. */}}
+<header class='navbar container'>
+  <ul class='left'>
+    <li>
+      <a class='brand' href='/'>
+        <img class='link-logo' src='/fullcolor_transparentbg_1024x1024_72dpi.png' alt='Diafcon' style="height: 150px;" />
+      </a>
+    </li>
+  </ul>
+
+  <ul class='right'>
+    <li><a href='/'>Getting Started</a></li>
+
+    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+    <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+    {{ end }}
+  </ul>
+</header>
