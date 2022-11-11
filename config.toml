@@ -1,4 +1,4 @@
-baseURL = "https://github.io/Diafcon.github.io"
+baseURL = "https://diafcon.github.io"
 languageCode = "en-us"
 title = "Official Diafon Docs"
 paginate = 6
